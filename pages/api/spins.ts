@@ -5,6 +5,8 @@ type Data = {
   name: string
 }
 
+const cache: any = null;
+
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>

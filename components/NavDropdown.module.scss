@@ -1,0 +1,31 @@
+.navDropdownContainer {
+  position: relative;
+  z-index: 1000;
+
+  button {
+    font-family: var(--theme-font);
+    font-size: 1.5rem;
+
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 8px;
+  }
+
+  ul {
+    background-color: var(--background-yellow);
+    position: absolute;
+    right: 0;
+    top: calc(100% - 1px); // so borders overlap
+    z-index: 2;
+
+    border: 1px solid black;
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+
+    li {
+      padding: 8px 12px;
+      white-space: nowrap;
+    }
+  }
+}
