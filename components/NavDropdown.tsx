@@ -17,6 +17,8 @@ function NavDropdown() {
         role="combobox"
         aria-controls="nav-dropdown-options"
         aria-expanded={isOpen}
+        onFocus={() => setOpen(true)}
+        onBlur={() => setOpen(false)}
       >
         About +
       </button>
