@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Player.module.scss";
 
 const STREAM_SRC = "http://rainydawg.org:8000/stream";
@@ -18,8 +18,29 @@ function Player() {
     }
   }
 
+  const [spins, setSpins] = useState<any>(null);
+
+  async function updateSpins() {
+    const res = await fetch("/api/spins");
+    const spins = await res.json();
+    setSpins(spins);
+  }
+
+  const [timerHandle, setTimerHandle] = useState<any>();
+  useEffect(() => {
+    updateSpins();
+
+    const handle = setInterval(() => {
+      updateSpins();
+      console.info("Getting spins");
+    }, 1000 * 10);
+    setTimerHandle(handle);
+
+    return () => clearInterval(timerHandle);
+  }, []);
+
   return (
-    <div>
+    <div className={styles.container}>
       <button type="button" onClick={playPause} className={styles.button}>
         {isPlaying ? (
           <svg
@@ -47,6 +68,12 @@ function Player() {
         )}
       </button>
       <audio ref={audioRef} src={STREAM_SRC}></audio>
+      <div className={styles.desc}>
+        <div>
+          <b>{spins && spins.spins.items[0].song}</b>
+        </div>
+        <div>{spins && spins.spins.items[0].artist}</div>
+      </div>
     </div>
   );
 }
