@@ -1,6 +1,5 @@
 import React from "react";
 import Head from "next/head";
-import Nav from "../components/Nav";
 import styles from "../styles/Home.module.scss";
 
 type LayoutProps = {
@@ -10,7 +9,7 @@ type LayoutProps = {
 
 function Layout({ children, title }: LayoutProps) {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
         <title>Rainydawg Radio</title>
         <meta
@@ -19,12 +18,8 @@ function Layout({ children, title }: LayoutProps) {
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.container}>
-        {title && <h1>{title}</h1>}
-        <main className={styles.main}>{children}</main>
-      </div>
-
-      <footer>adam is really fucking good</footer>
+      {title && <h1>{title}</h1>}
+      <div className={styles.main}>{children}</div>
     </div>
   );
 }

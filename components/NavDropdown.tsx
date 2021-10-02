@@ -25,7 +25,13 @@ function NavDropdown() {
       {isOpen && (
         <ul id="nav-dropdown-options" className={styles.navDropdownOptions}>
           <li>
-            <a href="https://rainydawgradioblog.tumblr.com/">Blog</a>
+            <a
+              href="https://rainydawgradioblog.tumblr.com/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Blog
+            </a>
           </li>
           <li>
             <Link href="/studio-recordings">Studio Recordings</Link>

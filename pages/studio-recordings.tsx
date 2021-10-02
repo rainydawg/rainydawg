@@ -6,7 +6,7 @@ const StudioRecordings: NextPage = () => {
     <Layout title="Studio Recordings">
       <h2>
         <a href="https://drive.google.com/drive/folders/1yH__qFQq-LalBPwxsUGW5uHb5AwQaO0U">
-          Click here for the Google Drive of studio recordings *
+          Click here for the Google Drive of studio recordings*
         </a>
       </h2>
       <p>
