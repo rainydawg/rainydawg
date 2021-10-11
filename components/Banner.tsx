@@ -11,7 +11,14 @@ function Banner() {
           target="_blank"
           rel="noreferrer"
         >
-          DJ application OPEN!
+          DJ Application OPEN!
+        </a>
+        <a
+         href="https://docs.google.com/forms/d/e/1FAIpQLSfgKuFuvccRhJP8JaHGXK9FGeNYQo4X_fbWxDMCCjQ4Amdq9A/viewform?usp=sf_link
+         "
+         target="_blank"
+         rel="noreferrer">
+         Blogger Application Open!
         </a>
       </p>
     </div>
