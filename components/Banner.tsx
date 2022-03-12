@@ -13,13 +13,13 @@ function Banner() {
         >
           DJ Application OPEN!      
         </a> }
-        <a
+        {/* <a
          href="https://docs.google.com/forms/d/e/1FAIpQLSfgKuFuvccRhJP8JaHGXK9FGeNYQo4X_fbWxDMCCjQ4Amdq9A/viewform?usp=sf_link
          "
          target="_blank"
          rel="noreferrer">
           Blogger Application Open! 
-        </a>
+        </a> */}
       </p>
     </div>
   );
