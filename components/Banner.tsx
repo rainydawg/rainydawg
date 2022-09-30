@@ -4,7 +4,7 @@ function Banner() {
   console.log(styles);
   return (
     <div className={styles.banner}>
-      <h2>Anncoument</h2>
+      <h2>Announcement</h2>
       <p>DJ Applications are CLOSED!</p>
     </div>
   );
