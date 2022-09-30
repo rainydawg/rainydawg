@@ -6,20 +6,13 @@ function Banner() {
     <div className={styles.banner}>
       <h2>Announcement</h2>
       <p>
-        { <a
+        {/* { <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfNcyNrU595Qyy31GhBXW-2wKGAbCPjl7x2RHjeNFxAvqXt-g/viewform"
           target="_blank"
           rel="noreferrer"
-        >
-          DJ Application OPEN!      
+        > */}
+          DJ Applications are CLOSED!      
         </a> }
-        {/* <a
-         href="https://docs.google.com/forms/d/e/1FAIpQLSfgKuFuvccRhJP8JaHGXK9FGeNYQo4X_fbWxDMCCjQ4Amdq9A/viewform?usp=sf_link
-         "
-         target="_blank"
-         rel="noreferrer">
-          Blogger Application Open! 
-        </a> */}
       </p>
     </div>
   );
