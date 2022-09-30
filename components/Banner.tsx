@@ -12,7 +12,7 @@ function Banner() {
           rel="noreferrer"
         > */}
           DJ Applications are CLOSED!      
-        </a> }
+        </a>
       </p>
     </div>
   );
