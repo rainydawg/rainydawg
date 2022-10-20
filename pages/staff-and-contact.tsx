@@ -32,7 +32,7 @@ const staff: StaffAndContactData[] = [
     email: "asuwrdam@uw.edu",
   },
   {
-    name: "Elliott Hansen",
+    name: "Charlie Darnall",
     title: "Music Director",
     photo: "/elliott.jpg",
     info1:
@@ -42,7 +42,7 @@ const staff: StaffAndContactData[] = [
     email: "asuwrdmd@uw.edu",
   },
   {
-    name: "Emily Vaughan",
+    name: "Cossette Fricke",
     title: "Promotions Coordinator",
     photo: "/pengu.png",
     info1: "information",
@@ -50,7 +50,7 @@ const staff: StaffAndContactData[] = [
     email: "asuwrdpc@uw.edu",
   },
   {
-    name: "Cooper Houston",
+    name: "Mia Pham",
     title: "Technology Manager",
     photo: "/pengu.png",
     info1: "*clipping and feedback*",
